@@ -21,7 +21,10 @@ function enterClicked() {
     "the area of the triangle is: " + area + " cm²."
 }
 
-document.getElementById('pay').innerHTML = `Your pay will be: $ ${takeHomeSalary.toFixed(2)}`
-document.getElementById('pay').innerHTML = 'Your pay will be: $' + takeHomeSalary.toFixed(2)
-xx = parseFloat(document.getElementById('length-of-rectangle').value)
+document.getElementById(
+  "pay"
+).innerHTML = `Your pay will be: $ ${takeHomeSalary.toFixed(2)}`
+document.getElementById("pay").innerHTML =
+  "Your pay will be: $" + takeHomeSalary.toFixed(2)
+xx = parseFloat(document.getElementById("length-of-rectangle").value)
 const TAX_RATE = 0.18
