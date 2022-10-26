@@ -42,35 +42,39 @@
               />
             </th>
             <th>
-              <h2>please enter youremployment infomation:</h2>
+              <h2>please enter your employment infomation:</h2>
             </th>
           </tr>
         </table>
         <!-- Simple Textfield -->
         <form action="#">
-          <p>take</p>
+          <p>number of hours worked</p>
           <div class="mdl-textfield mdl-js-textfield">
             <input
               class="mdl-textfield__input"
               type="text"
               pattern="-?[0-9]*(\.[0-9]+)?"
-              id="take"
+              id="number-of-hours-worked"
             />
-            <label class="mdl-textfield__label" for="take">take here ...</label>
+            <label class="mdl-textfield__label" for="number-of-hours-worked"
+              >number of hours worked here ...</label
+            >
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
         </form>
         <!-- Numeric Textfield -->
         <form action="#">
-          <p>wage</p>
+          <p>Hourly rate $</p>
           <div class="mdl-textfield mdl-js-textfield">
             <input
               class="mdl-textfield__input"
               type="text"
               pattern="-?[0-9]*(\.[0-9]+)?"
-              id="wage"
+              id="Hourly-rate"
             />
-            <label class="mdl-textfield__label" for="wage">wage here ...</label>
+            <label class="mdl-textfield__label" for="Hourly-rate"
+              >Hourly rate $ here ...</label
+            >
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
         </form>
@@ -84,7 +88,8 @@
         </button>
         <br />
         <div id="answers">
-          <div id="area-of-take"></div>
+          <div id="take"></div>
+          <div id="wage"></div>
         </div>
       </main>
     </div>
