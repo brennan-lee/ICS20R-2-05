@@ -18,4 +18,5 @@ function calculate() {
   document.getElementById("take").innerHTML =
     "The governemnt will take: " + take + "$"
   document.getElementById("wage").innerHTML = "your pay will be: " + wage + "$"
+  value.toFixed(2)
 }
