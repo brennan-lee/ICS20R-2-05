@@ -14,9 +14,9 @@ function calculate() {
 
   const take = hours * rate * 0.18
   const wage = hours * rate * (1.0 - 0.18)
+  value.toFixed(2);
 
   document.getElementById("take").innerHTML =
     "The governemnt will take: " + take + "$"
   document.getElementById("wage").innerHTML = "your pay will be: " + wage + "$"
-  value.toFixed(2)
 }
