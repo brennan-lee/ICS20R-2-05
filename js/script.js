@@ -5,26 +5,17 @@
 // This file contains the JS functions for index.html
 
 "use strict"
-/**
- * This function calculates area of triangle.
- */
-function enterClicked() {
-  // input
-  const base = parseInt(document.getElementById("base-of-triangle").value)
-  const height = parseInt(document.getElementById("height-of-triangle").value)
 
-  // process
-  const area = (base * height) / 2
+function calculate() {
+  const hours = parseInt(
+    document.getElementById("number-of-hours-worked").value
+  )
+  const rate = parseInt(document.getElementById("Hourly-rate:$").value)
 
-  // output
-  document.getElementById("area-of-triangle").innerHTML =
-    "the area of the triangle is: " + area + " cm²."
+  const take = hours * rate * 0.18
+  const wage = hours * rate * (1.0 - 0.18)
+
+  document.getElementById("take").innerHTML =
+    "The governemnt will take: " + take + "$"
+  document.getElementById("wage").innerHTML = "your pay will be: " + wage + "$"
 }
-
-document.getElementById(
-  "pay"
-).innerHTML = `Your pay will be: $ ${takeHomeSalary.toFixed(2)}`
-document.getElementById("pay").innerHTML =
-  "Your pay will be: $" + takeHomeSalary.toFixed(2)
-xx = parseFloat(document.getElementById("length-of-rectangle").value)
-const TAX_RATE = 0.18
