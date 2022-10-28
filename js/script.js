@@ -10,6 +10,7 @@ function calculate() {
   const hours = parseInt(
     document.getElementById("number-of-hours-worked").value
   )
+  document.getElementById('pay').innerHTML = `Your pay will be: $ ${takeHomeSalary.toFixed(2)}`
   const rate = parseInt(document.getElementById("Hourly-rate").value)
 
   const take = hours * rate * 0.18
